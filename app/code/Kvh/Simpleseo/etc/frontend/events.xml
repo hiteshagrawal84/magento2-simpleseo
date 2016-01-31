@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+...
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+    <event name="catalog_block_product_list_collection">
+        <observer name="kvh_simpleseo_catalog_block_product_list_collection" instance="Kvh\Simpleseo\Model\Observer" method="changemeta" />
+    </event>
+</config>

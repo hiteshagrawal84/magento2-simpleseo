@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="simpleseo" translate="label" sortOrder="100">
+            <label>KVH</label>
+        </tab>
+         <section id="simpleseo" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>SimpleSeo Configuration</label>
+            <tab>simpleseo</tab>
+            <resource>Kvh_Simpleseo::simpleseo_config</resource>
+            <group id="active_display" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>SimpleSeo Configuration Options</label>
+                <field id="scope" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Simpleseo</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>                
+            </group>
+            <group id="category_config" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Category Page Configuration</label>
+                <field id="category_meta_title" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Title Formula</label>                                       
+                </field>                
+                <field id="category_meta_keyword" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Keyword Formula</label>                                       
+                </field>
+                <field id="category_meta_description" translate="label" type="textarea" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Description Formula</label>                                       
+                </field>                                
+            </group>
+             <group id="product_config" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product Page Configuration</label>
+                <field id="product_meta_title" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Title Formula</label>                                       
+                </field> 
+                 <field id="product_meta_keyword" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Keyword Formula</label>                                       
+                </field>                
+                 <field id="product_meta_description" translate="label" type="textarea" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Description Formula</label>                                       
+                </field>                               
+            </group>
+        </section>
+    </system>
+</config>
